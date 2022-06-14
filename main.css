@@ -1,0 +1,859 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Commissioner', sans-serif;
+}
+
+body {
+    background: url("./images/image-hero-desktop.jpg") no-repeat;
+    background-size: 100% 300px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+main {
+    width: 100%;
+    height: 100vh;
+    margin-top: 10%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.container {
+    width: 40%;
+    height: 100vh;
+}
+
+header {
+    width: 60%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chart {
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.fund {
+    width: 100%;
+    height: 270px;
+    text-align: center;
+    background: white;
+    border-radius: 5px ;
+    box-shadow: rgb(146, 146, 146) 1px 1px 3px;
+    position: relative;
+    top: -70px;
+}
+
+.logo {
+    position: relative;
+    top: -25px
+}
+
+.fund h1 {
+    margin:0;
+
+}
+
+.fung p {
+    margin: 0
+}
+
+.bookmark {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.back-btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background: hsl(176, 50%, 47%);
+    border: none;
+    outline: none;
+    color: white;
+    cursor:pointer
+}
+
+.img-btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:0;
+    margin: 0;
+    border: none;
+    outline: none;
+    cursor:pointer
+}
+
+.mark-img {
+    width:48px;
+    height: 48px;
+}
+
+.mark-txt {
+    margin-right: 15%;
+    font-weight: bold
+}
+
+.status {
+    width: 100%;
+    height: 230px;
+    position: relative;
+    top: -5%;
+    display: flex;
+    flex-flow: column wrap;
+    box-shadow: rgb(146, 146, 146) 1px 1px 3px; 
+    border-radius: 10px;
+}
+
+.info {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.info h1 {
+    margin-left: 50px;
+    padding-left : 50px;
+    border-left: 1px solid rgb(134, 133, 133)
+}
+
+.info .first {
+    border-left: none;
+    padding-left: 0;
+}
+
+.info .middle {
+    padding-right: 50px
+}
+
+.info span{
+    font-size: 1rem
+}
+
+.progress {
+    width: 86%;
+    height: 10px;
+    border-radius: 3px;
+    margin-top: 90px;
+    margin-left: 45px;
+    background: rgb(199, 194, 194);
+}
+
+.Bar {
+    width: 77%;
+    height: 100%;
+    border-radius: 5px;
+    background: hsl(176, 50%, 47%);
+}
+
+.presentation {
+    width: 100%;
+    height: 1180px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 30px 40px;
+    box-shadow: rgb(146, 146, 146) 1px 1px 3px ; 
+    border-radius: 10px;
+}
+
+.presentation p {
+    line-height: 2rem
+}
+
+.card {
+    width:100%;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid rgb(201, 198, 198);
+    margin-top: 20px;
+    padding: 10px 25px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.suj {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.pledge {
+    color: hsl(176, 50%, 47%);
+    margin-right: 20px;
+}
+
+.btns {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.num {
+    font-size: 2rem
+}
+
+.option {
+    width: 130px;
+    height: 40px;
+    margin-right: 20px;
+    color: white;
+    background:hsl(176, 50%, 47%);
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.bid {
+     
+    position: relative
+
+}
+
+.option.Third {
+    background:  hsl(0, 0%, 48%);
+}
+
+small {
+    position: absolute;
+    top: 28%;
+    left: 120%;
+}
+
+.bookmarked {
+    color: hsl(176, 50%, 47%);
+}
+
+.bodyfilter {
+   z-index: -1
+}
+
+/* popup  */
+
+.popUp {
+    width: 40%;
+    height: 830px;
+    position: absolute;
+    top: 16%;
+    left: 30%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgb(241, 233, 233) 0px 5px 10px;
+    padding: 15px 40px;
+    z-index: 10;
+}
+
+.popUp-height {
+    height: 930px;
+}
+
+
+.close {
+    position: relative;
+    top: 3%;
+    left: 93%;
+    cursor:pointer;
+}
+
+.Card {
+    width: 100%;
+    height: 150px;
+    border: 1px solid rgb(202, 197, 197);
+    border-radius: 7px;
+    display: flex;
+}
+
+.card-shadow{
+    box-shadow: none;
+    border-radius:none;
+    border: none;
+    
+}
+
+
+.body {
+    width: 95%;
+    height: 100%;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.checked {
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid hsl(176, 50%, 47%) ;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 0;
+}
+
+.body h3 {
+    cursor: pointer;
+}
+.body h3:hover{
+    color: hsl(176, 50%, 47%);
+}
+
+.body p {
+    color:hsl(0, 0%, 48%);
+}
+
+.thead {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side {
+    display: flex;
+}
+
+.two-five {
+    margin-left: 15px;
+}
+
+.right-side {
+    margin-right: 20px;
+}
+
+.describe {
+    margin-top: -4px;
+    line-height: 1.7rem;
+}
+
+.Card.Mahogany {
+    opacity: .3
+}
+
+.checked:hover {
+    cursor:pointer
+}
+
+.circle {
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
+    position: relative;
+    top: -11.3px;
+    left: 4.4px;
+    background: hsl(176, 50%, 47%);
+    display: none
+}
+
+.show {
+    display: block
+}
+
+.card-box{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.show-box {
+    border: 1px solid hsl(176, 50%, 47%);
+    height: 250px;
+    border-radius: 10px;
+}
+
+.bid {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-top: 2px solid rgb(221, 220, 220);
+    display: none
+}
+
+.show-bid {
+    display:block;
+    display:flex;
+}
+
+
+.bid-txt {
+    opacity: .3
+}
+
+.btn {
+    widtH: 100px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+
+.btn.count {
+    margin-right: 15px;
+    color: black;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.btn.continue {
+    color: white;
+    background: hsl(176, 72%, 28%);
+    cursor: pointer;
+}
+
+.contents {
+    width: 550px;
+    height: 500px;
+    position: fixed;
+    top: 15%;
+    left: 35%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.support {
+     padding: 50px 35px;
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: center;
+     align-items: center;
+}
+
+.support p {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    text-align: center;
+    margin-top: 0;
+    color:hsl(0, 1%, 39%);
+}
+
+.support button {
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background:hsl(176, 50%, 47%);
+    padding: 17px;
+    font-size: 1.3rem;
+    color: white;
+    margin-top: 30px;
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
